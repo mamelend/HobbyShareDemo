@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26E3EB2E1D50055700330EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB2D1D50055700330EAE /* AppDelegate.swift */; };
+		26E3EB301D50055700330EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB2F1D50055700330EAE /* ViewController.swift */; };
+		26E3EB331D50055700330EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E3EB311D50055700330EAE /* Main.storyboard */; };
+		26E3EB351D50055700330EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E3EB341D50055700330EAE /* Assets.xcassets */; };
+		26E3EB381D50055700330EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E3EB361D50055700330EAE /* LaunchScreen.storyboard */; };
+		26E3EB431D50055700330EAE /* hoBshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB421D50055700330EAE /* hoBshareTests.swift */; };
+		26E3EB4E1D50055700330EAE /* hoBshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26E3EB3F1D50055700330EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E3EB221D50055700330EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E3EB291D50055700330EAE;
+			remoteInfo = hoBshare;
+		};
+		26E3EB4A1D50055700330EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E3EB221D50055700330EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E3EB291D50055700330EAE;
+			remoteInfo = hoBshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26E3EB2A1D50055700330EAE /* hoBshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoBshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E3EB2D1D50055700330EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26E3EB2F1D50055700330EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26E3EB321D50055700330EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26E3EB341D50055700330EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26E3EB371D50055700330EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26E3EB391D50055700330EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E3EB3E1D50055700330EAE /* hoBshareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoBshareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E3EB421D50055700330EAE /* hoBshareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoBshareTests.swift; sourceTree = "<group>"; };
+		26E3EB441D50055700330EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E3EB491D50055700330EAE /* hoBshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoBshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoBshareUITests.swift; sourceTree = "<group>"; };
+		26E3EB4F1D50055700330EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26E3EB271D50055700330EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB3B1D50055700330EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB461D50055700330EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E3EB211D50055700330EAE = {
+			isa = PBXGroup;
+			children = (
+				26E3EB2C1D50055700330EAE /* hoBshare */,
+				26E3EB411D50055700330EAE /* hoBshareTests */,
+				26E3EB4C1D50055700330EAE /* hoBshareUITests */,
+				26E3EB2B1D50055700330EAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26E3EB2B1D50055700330EAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26E3EB2A1D50055700330EAE /* hoBshare.app */,
+				26E3EB3E1D50055700330EAE /* hoBshareTests.xctest */,
+				26E3EB491D50055700330EAE /* hoBshareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26E3EB2C1D50055700330EAE /* hoBshare */ = {
+			isa = PBXGroup;
+			children = (
+				26E3EB2D1D50055700330EAE /* AppDelegate.swift */,
+				26E3EB2F1D50055700330EAE /* ViewController.swift */,
+				26E3EB311D50055700330EAE /* Main.storyboard */,
+				26E3EB341D50055700330EAE /* Assets.xcassets */,
+				26E3EB361D50055700330EAE /* LaunchScreen.storyboard */,
+				26E3EB391D50055700330EAE /* Info.plist */,
+			);
+			path = hoBshare;
+			sourceTree = "<group>";
+		};
+		26E3EB411D50055700330EAE /* hoBshareTests */ = {
+			isa = PBXGroup;
+			children = (
+				26E3EB421D50055700330EAE /* hoBshareTests.swift */,
+				26E3EB441D50055700330EAE /* Info.plist */,
+			);
+			path = hoBshareTests;
+			sourceTree = "<group>";
+		};
+		26E3EB4C1D50055700330EAE /* hoBshareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */,
+				26E3EB4F1D50055700330EAE /* Info.plist */,
+			);
+			path = hoBshareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26E3EB291D50055700330EAE /* hoBshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E3EB521D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshare" */;
+			buildPhases = (
+				26E3EB261D50055700330EAE /* Sources */,
+				26E3EB271D50055700330EAE /* Frameworks */,
+				26E3EB281D50055700330EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hoBshare;
+			productName = hoBshare;
+			productReference = 26E3EB2A1D50055700330EAE /* hoBshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26E3EB3D1D50055700330EAE /* hoBshareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E3EB551D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareTests" */;
+			buildPhases = (
+				26E3EB3A1D50055700330EAE /* Sources */,
+				26E3EB3B1D50055700330EAE /* Frameworks */,
+				26E3EB3C1D50055700330EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26E3EB401D50055700330EAE /* PBXTargetDependency */,
+			);
+			name = hoBshareTests;
+			productName = hoBshareTests;
+			productReference = 26E3EB3E1D50055700330EAE /* hoBshareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26E3EB481D50055700330EAE /* hoBshareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E3EB581D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareUITests" */;
+			buildPhases = (
+				26E3EB451D50055700330EAE /* Sources */,
+				26E3EB461D50055700330EAE /* Frameworks */,
+				26E3EB471D50055700330EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26E3EB4B1D50055700330EAE /* PBXTargetDependency */,
+			);
+			name = hoBshareUITests;
+			productName = hoBshareUITests;
+			productReference = 26E3EB491D50055700330EAE /* hoBshareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26E3EB221D50055700330EAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Miguel Melendez";
+				TargetAttributes = {
+					26E3EB291D50055700330EAE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6MNZPDBHKE;
+					};
+					26E3EB3D1D50055700330EAE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6MNZPDBHKE;
+						TestTargetID = 26E3EB291D50055700330EAE;
+					};
+					26E3EB481D50055700330EAE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6MNZPDBHKE;
+						TestTargetID = 26E3EB291D50055700330EAE;
+					};
+				};
+			};
+			buildConfigurationList = 26E3EB251D50055700330EAE /* Build configuration list for PBXProject "hoBshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26E3EB211D50055700330EAE;
+			productRefGroup = 26E3EB2B1D50055700330EAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26E3EB291D50055700330EAE /* hoBshare */,
+				26E3EB3D1D50055700330EAE /* hoBshareTests */,
+				26E3EB481D50055700330EAE /* hoBshareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26E3EB281D50055700330EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E3EB381D50055700330EAE /* LaunchScreen.storyboard in Resources */,
+				26E3EB351D50055700330EAE /* Assets.xcassets in Resources */,
+				26E3EB331D50055700330EAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB3C1D50055700330EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB471D50055700330EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26E3EB261D50055700330EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E3EB301D50055700330EAE /* ViewController.swift in Sources */,
+				26E3EB2E1D50055700330EAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB3A1D50055700330EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E3EB431D50055700330EAE /* hoBshareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E3EB451D50055700330EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E3EB4E1D50055700330EAE /* hoBshareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26E3EB401D50055700330EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26E3EB291D50055700330EAE /* hoBshare */;
+			targetProxy = 26E3EB3F1D50055700330EAE /* PBXContainerItemProxy */;
+		};
+		26E3EB4B1D50055700330EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26E3EB291D50055700330EAE /* hoBshare */;
+			targetProxy = 26E3EB4A1D50055700330EAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26E3EB311D50055700330EAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E3EB321D50055700330EAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26E3EB361D50055700330EAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E3EB371D50055700330EAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26E3EB501D50055700330EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26E3EB511D50055700330EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26E3EB531D50055700330EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hoBshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26E3EB541D50055700330EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hoBshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26E3EB561D50055700330EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hoBshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoBshare.app/hoBshare";
+			};
+			name = Debug;
+		};
+		26E3EB571D50055700330EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hoBshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoBshare.app/hoBshare";
+			};
+			name = Release;
+		};
+		26E3EB591D50055700330EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hoBshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hoBshare;
+			};
+			name = Debug;
+		};
+		26E3EB5A1D50055700330EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hoBshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelmelendezcalero.CoreDataCoursera.hoBshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hoBshare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26E3EB251D50055700330EAE /* Build configuration list for PBXProject "hoBshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E3EB501D50055700330EAE /* Debug */,
+				26E3EB511D50055700330EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E3EB521D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E3EB531D50055700330EAE /* Debug */,
+				26E3EB541D50055700330EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		26E3EB551D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E3EB561D50055700330EAE /* Debug */,
+				26E3EB571D50055700330EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		26E3EB581D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E3EB591D50055700330EAE /* Debug */,
+				26E3EB5A1D50055700330EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26E3EB221D50055700330EAE /* Project object */;
+}
