@@ -15,10 +15,6 @@ class NeighborsViewController: HoBshareViewController, MKMapViewDelegate {
     
     var users: [User]?
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         mapView.delegate = self

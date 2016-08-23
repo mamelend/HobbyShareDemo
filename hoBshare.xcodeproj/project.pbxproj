@@ -17,10 +17,10 @@
 		26E3EB4E1D50055700330EAE /* hoBshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */; };
 		26E3EB5C1D5008BA00330EAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3EB5B1D5008BA00330EAE /* MapKit.framework */; };
 		26E935BC1D56616000D99777 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E935BB1D56616000D99777 /* Constants.swift */; };
+		26EE33EB1D6CED3200350D74 /* SFLBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EE33E91D6CED3200350D74 /* SFLBaseModel.swift */; };
+		26EE33EC1D6CED3200350D74 /* SFLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EE33EA1D6CED3200350D74 /* SFLConnection.swift */; };
 		26EFFB6D1D5553DE0085968D /* me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EFFB6C1D5553DE0085968D /* me@3x.png */; };
 		26EFFB6F1D5553EF0085968D /* neighbors@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EFFB6E1D5553EF0085968D /* neighbors@3x.png */; };
-		26EFFB721D5554BA0085968D /* SFLBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB701D5554BA0085968D /* SFLBaseModel.swift */; };
-		26EFFB731D5554BA0085968D /* SFLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB711D5554BA0085968D /* SFLConnection.swift */; };
 		26EFFB751D5555CA0085968D /* HoBshareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB741D5555CA0085968D /* HoBshareViewController.swift */; };
 		26EFFB791D5556620085968D /* EditHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB781D5556620085968D /* EditHobbiesViewController.swift */; };
 		26EFFB7B1D55568E0085968D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB7A1D55568E0085968D /* MeViewController.swift */; };
@@ -64,10 +64,10 @@
 		26E3EB4F1D50055700330EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E3EB5B1D5008BA00330EAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		26E935BB1D56616000D99777 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		26EE33E91D6CED3200350D74 /* SFLBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLBaseModel.swift; sourceTree = "<group>"; };
+		26EE33EA1D6CED3200350D74 /* SFLConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLConnection.swift; sourceTree = "<group>"; };
 		26EFFB6C1D5553DE0085968D /* me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@3x.png"; path = "../../../../Downloads/StarterKit/me@3x.png"; sourceTree = "<group>"; };
 		26EFFB6E1D5553EF0085968D /* neighbors@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "neighbors@3x.png"; path = "../../../../Downloads/StarterKit/neighbors@3x.png"; sourceTree = "<group>"; };
-		26EFFB701D5554BA0085968D /* SFLBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLBaseModel.swift; path = ../../../../Downloads/StarterKit/SFLBaseModel.swift; sourceTree = "<group>"; };
-		26EFFB711D5554BA0085968D /* SFLConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLConnection.swift; path = ../../../../Downloads/StarterKit/SFLConnection.swift; sourceTree = "<group>"; };
 		26EFFB741D5555CA0085968D /* HoBshareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoBshareViewController.swift; sourceTree = "<group>"; };
 		26EFFB781D5556620085968D /* EditHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHobbiesViewController.swift; sourceTree = "<group>"; };
 		26EFFB7A1D55568E0085968D /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = ../MeViewController.swift; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 				26EFFB7E1D556E3D0085968D /* Models.swift */,
 				26EFFB801D556E970085968D /* DataProviders.swift */,
 				26EFFB7C1D5556A80085968D /* NeighborsViewController.swift */,
-				26EFFB701D5554BA0085968D /* SFLBaseModel.swift */,
-				26EFFB711D5554BA0085968D /* SFLConnection.swift */,
+				26EE33E91D6CED3200350D74 /* SFLBaseModel.swift */,
+				26EE33EA1D6CED3200350D74 /* SFLConnection.swift */,
 				26EFFB6E1D5553EF0085968D /* neighbors@3x.png */,
 				26EFFB6C1D5553DE0085968D /* me@3x.png */,
 				26E3EB341D50055700330EAE /* Assets.xcassets */,
@@ -305,17 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				26EFFB7D1D5556A80085968D /* NeighborsViewController.swift in Sources */,
-				26EFFB721D5554BA0085968D /* SFLBaseModel.swift in Sources */,
+				26EE33EC1D6CED3200350D74 /* SFLConnection.swift in Sources */,
 				26EFFB811D556E970085968D /* DataProviders.swift in Sources */,
 				26EFFB7B1D55568E0085968D /* MeViewController.swift in Sources */,
 				26EFFB751D5555CA0085968D /* HoBshareViewController.swift in Sources */,
 				26EFFB791D5556620085968D /* EditHobbiesViewController.swift in Sources */,
 				26E397E91D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift in Sources */,
 				26E3EB301D50055700330EAE /* ViewController.swift in Sources */,
+				26EE33EB1D6CED3200350D74 /* SFLBaseModel.swift in Sources */,
 				26EFFB7F1D556E3D0085968D /* Models.swift in Sources */,
 				26E3EB2E1D50055700330EAE /* AppDelegate.swift in Sources */,
 				26EFFB831D5584C60085968D /* HobbyCollectionViewCell.swift in Sources */,
-				26EFFB731D5554BA0085968D /* SFLConnection.swift in Sources */,
 				26E935BC1D56616000D99777 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
