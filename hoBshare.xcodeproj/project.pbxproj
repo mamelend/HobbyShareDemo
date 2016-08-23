@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E397E91D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E397E81D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift */; };
 		26E3EB2E1D50055700330EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB2D1D50055700330EAE /* AppDelegate.swift */; };
 		26E3EB301D50055700330EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB2F1D50055700330EAE /* ViewController.swift */; };
 		26E3EB331D50055700330EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E3EB311D50055700330EAE /* Main.storyboard */; };
@@ -14,6 +15,19 @@
 		26E3EB381D50055700330EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E3EB361D50055700330EAE /* LaunchScreen.storyboard */; };
 		26E3EB431D50055700330EAE /* hoBshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB421D50055700330EAE /* hoBshareTests.swift */; };
 		26E3EB4E1D50055700330EAE /* hoBshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */; };
+		26E3EB5C1D5008BA00330EAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3EB5B1D5008BA00330EAE /* MapKit.framework */; };
+		26E935BC1D56616000D99777 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E935BB1D56616000D99777 /* Constants.swift */; };
+		26EFFB6D1D5553DE0085968D /* me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EFFB6C1D5553DE0085968D /* me@3x.png */; };
+		26EFFB6F1D5553EF0085968D /* neighbors@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26EFFB6E1D5553EF0085968D /* neighbors@3x.png */; };
+		26EFFB721D5554BA0085968D /* SFLBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB701D5554BA0085968D /* SFLBaseModel.swift */; };
+		26EFFB731D5554BA0085968D /* SFLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB711D5554BA0085968D /* SFLConnection.swift */; };
+		26EFFB751D5555CA0085968D /* HoBshareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB741D5555CA0085968D /* HoBshareViewController.swift */; };
+		26EFFB791D5556620085968D /* EditHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB781D5556620085968D /* EditHobbiesViewController.swift */; };
+		26EFFB7B1D55568E0085968D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB7A1D55568E0085968D /* MeViewController.swift */; };
+		26EFFB7D1D5556A80085968D /* NeighborsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB7C1D5556A80085968D /* NeighborsViewController.swift */; };
+		26EFFB7F1D556E3D0085968D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB7E1D556E3D0085968D /* Models.swift */; };
+		26EFFB811D556E970085968D /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB801D556E970085968D /* DataProviders.swift */; };
+		26EFFB831D5584C60085968D /* HobbyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EFFB821D5584C60085968D /* HobbyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26E397E81D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbiesCollectionViewHeader.swift; sourceTree = "<group>"; };
 		26E3EB2A1D50055700330EAE /* hoBshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoBshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E3EB2D1D50055700330EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26E3EB2F1D50055700330EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,19 @@
 		26E3EB491D50055700330EAE /* hoBshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoBshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E3EB4D1D50055700330EAE /* hoBshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoBshareUITests.swift; sourceTree = "<group>"; };
 		26E3EB4F1D50055700330EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E3EB5B1D5008BA00330EAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		26E935BB1D56616000D99777 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		26EFFB6C1D5553DE0085968D /* me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@3x.png"; path = "../../../../Downloads/StarterKit/me@3x.png"; sourceTree = "<group>"; };
+		26EFFB6E1D5553EF0085968D /* neighbors@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "neighbors@3x.png"; path = "../../../../Downloads/StarterKit/neighbors@3x.png"; sourceTree = "<group>"; };
+		26EFFB701D5554BA0085968D /* SFLBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLBaseModel.swift; path = ../../../../Downloads/StarterKit/SFLBaseModel.swift; sourceTree = "<group>"; };
+		26EFFB711D5554BA0085968D /* SFLConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLConnection.swift; path = ../../../../Downloads/StarterKit/SFLConnection.swift; sourceTree = "<group>"; };
+		26EFFB741D5555CA0085968D /* HoBshareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoBshareViewController.swift; sourceTree = "<group>"; };
+		26EFFB781D5556620085968D /* EditHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHobbiesViewController.swift; sourceTree = "<group>"; };
+		26EFFB7A1D55568E0085968D /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = ../MeViewController.swift; sourceTree = "<group>"; };
+		26EFFB7C1D5556A80085968D /* NeighborsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeighborsViewController.swift; sourceTree = "<group>"; };
+		26EFFB7E1D556E3D0085968D /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		26EFFB801D556E970085968D /* DataProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		26EFFB821D5584C60085968D /* HobbyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E3EB5C1D5008BA00330EAE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +106,7 @@
 		26E3EB211D50055700330EAE = {
 			isa = PBXGroup;
 			children = (
+				26E3EB5B1D5008BA00330EAE /* MapKit.framework */,
 				26E3EB2C1D50055700330EAE /* hoBshare */,
 				26E3EB411D50055700330EAE /* hoBshareTests */,
 				26E3EB4C1D50055700330EAE /* hoBshareUITests */,
@@ -100,6 +130,19 @@
 				26E3EB2D1D50055700330EAE /* AppDelegate.swift */,
 				26E3EB2F1D50055700330EAE /* ViewController.swift */,
 				26E3EB311D50055700330EAE /* Main.storyboard */,
+				26EFFB741D5555CA0085968D /* HoBshareViewController.swift */,
+				26E935BB1D56616000D99777 /* Constants.swift */,
+				26EFFB821D5584C60085968D /* HobbyCollectionViewCell.swift */,
+				26EFFB7A1D55568E0085968D /* MeViewController.swift */,
+				26EFFB781D5556620085968D /* EditHobbiesViewController.swift */,
+				26E397E81D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift */,
+				26EFFB7E1D556E3D0085968D /* Models.swift */,
+				26EFFB801D556E970085968D /* DataProviders.swift */,
+				26EFFB7C1D5556A80085968D /* NeighborsViewController.swift */,
+				26EFFB701D5554BA0085968D /* SFLBaseModel.swift */,
+				26EFFB711D5554BA0085968D /* SFLConnection.swift */,
+				26EFFB6E1D5553EF0085968D /* neighbors@3x.png */,
+				26EFFB6C1D5553DE0085968D /* me@3x.png */,
 				26E3EB341D50055700330EAE /* Assets.xcassets */,
 				26E3EB361D50055700330EAE /* LaunchScreen.storyboard */,
 				26E3EB391D50055700330EAE /* Info.plist */,
@@ -233,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E3EB381D50055700330EAE /* LaunchScreen.storyboard in Resources */,
+				26EFFB6D1D5553DE0085968D /* me@3x.png in Resources */,
 				26E3EB351D50055700330EAE /* Assets.xcassets in Resources */,
+				26EFFB6F1D5553EF0085968D /* neighbors@3x.png in Resources */,
 				26E3EB331D50055700330EAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EFFB7D1D5556A80085968D /* NeighborsViewController.swift in Sources */,
+				26EFFB721D5554BA0085968D /* SFLBaseModel.swift in Sources */,
+				26EFFB811D556E970085968D /* DataProviders.swift in Sources */,
+				26EFFB7B1D55568E0085968D /* MeViewController.swift in Sources */,
+				26EFFB751D5555CA0085968D /* HoBshareViewController.swift in Sources */,
+				26EFFB791D5556620085968D /* EditHobbiesViewController.swift in Sources */,
+				26E397E91D5DCB8700CFF73B /* HobbiesCollectionViewHeader.swift in Sources */,
 				26E3EB301D50055700330EAE /* ViewController.swift in Sources */,
+				26EFFB7F1D556E3D0085968D /* Models.swift in Sources */,
 				26E3EB2E1D50055700330EAE /* AppDelegate.swift in Sources */,
+				26EFFB831D5584C60085968D /* HobbyCollectionViewCell.swift in Sources */,
+				26EFFB731D5554BA0085968D /* SFLConnection.swift in Sources */,
+				26E935BC1D56616000D99777 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +543,7 @@
 				26E3EB541D50055700330EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E3EB551D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +552,7 @@
 				26E3EB571D50055700330EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E3EB581D50055700330EAE /* Build configuration list for PBXNativeTarget "hoBshareUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +561,7 @@
 				26E3EB5A1D50055700330EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

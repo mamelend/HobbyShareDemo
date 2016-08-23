@@ -1,25 +1,511 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GBJ-aU-2hN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Neighbors-->
+        <scene sceneID="JVt-i8-K2X">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xNk-jW-bK1" customClass="NeighborsViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Rhp-gp-TjH"/>
+                        <viewControllerLayoutGuide type="bottom" id="fx7-o4-tR5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="gID-Qg-Izv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-Hu-TCd">
+                                <rect key="frame" x="254" y="453" width="92" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="3GH-No-BDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hZ-op-7l7">
+                                <rect key="frame" x="20" y="443" width="560" height="2"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="3yZ-y6-zIE"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WVN-rl-fE4">
+                                <rect key="frame" x="20" y="480" width="560" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="NF7-Ja-2QT"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aGz-Cg-fnV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="1et-fL-5rq" customClass="HobbyCollectionViewCell" customModule="hoBshare" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hMC-n4-GfX">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="hMC-n4-GfX" firstAttribute="bottom" secondItem="1et-fL-5rq" secondAttribute="bottomMargin" id="6hJ-xb-Gzj"/>
+                                            <constraint firstItem="hMC-n4-GfX" firstAttribute="leading" secondItem="1et-fL-5rq" secondAttribute="leadingMargin" id="7kn-cu-Er2"/>
+                                            <constraint firstItem="hMC-n4-GfX" firstAttribute="trailing" secondItem="1et-fL-5rq" secondAttribute="trailingMargin" id="J0c-kT-uEv"/>
+                                            <constraint firstItem="hMC-n4-GfX" firstAttribute="top" secondItem="1et-fL-5rq" secondAttribute="topMargin" id="ZBb-Hb-utI"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="hMC-n4-GfX" id="Zoj-cl-w3j"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="xNk-jW-bK1" id="beC-1l-M8P"/>
+                                    <outlet property="delegate" destination="xNk-jW-bK1" id="RM7-Ql-PGJ"/>
+                                </connections>
+                            </collectionView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sk1-Ta-qil">
+                                <rect key="frame" x="20" y="28" width="560" height="407"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="415" id="GyJ-Cw-vfB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GyJ-Cw-vfB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="xNk-jW-bK1" id="4Nf-vg-5N8"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sk1-Ta-qil" firstAttribute="leading" secondItem="gID-Qg-Izv" secondAttribute="leadingMargin" id="0ml-qo-8md"/>
+                            <constraint firstItem="Sk1-Ta-qil" firstAttribute="trailing" secondItem="9hZ-op-7l7" secondAttribute="trailing" id="2Pr-sN-m0a"/>
+                            <constraint firstItem="fx7-o4-tR5" firstAttribute="top" secondItem="WVN-rl-fE4" secondAttribute="bottom" constant="8" symbolic="YES" id="3CR-77-cSn"/>
+                            <constraint firstItem="Sk1-Ta-qil" firstAttribute="trailing" secondItem="gID-Qg-Izv" secondAttribute="trailingMargin" id="JWH-ja-f8V"/>
+                            <constraint firstItem="WVN-rl-fE4" firstAttribute="top" secondItem="Ac7-Hu-TCd" secondAttribute="bottom" constant="8" symbolic="YES" id="NLe-Rc-7YM"/>
+                            <constraint firstItem="Sk1-Ta-qil" firstAttribute="leading" secondItem="9hZ-op-7l7" secondAttribute="leading" id="UPo-Ao-kwF"/>
+                            <constraint firstItem="Ac7-Hu-TCd" firstAttribute="top" secondItem="9hZ-op-7l7" secondAttribute="bottom" constant="8" symbolic="YES" id="hMr-GS-dZj"/>
+                            <constraint firstItem="9hZ-op-7l7" firstAttribute="top" secondItem="Sk1-Ta-qil" secondAttribute="bottom" constant="8" symbolic="YES" id="irq-1M-vYR"/>
+                            <constraint firstItem="9hZ-op-7l7" firstAttribute="leading" secondItem="WVN-rl-fE4" secondAttribute="leading" id="sfb-AA-fkp"/>
+                            <constraint firstItem="9hZ-op-7l7" firstAttribute="centerX" secondItem="Ac7-Hu-TCd" secondAttribute="centerX" id="slv-WZ-bJP"/>
+                            <constraint firstItem="9hZ-op-7l7" firstAttribute="trailing" secondItem="WVN-rl-fE4" secondAttribute="trailing" id="vA6-FH-DQC"/>
+                            <constraint firstItem="Sk1-Ta-qil" firstAttribute="top" secondItem="Rhp-gp-TjH" secondAttribute="bottom" constant="8" id="xdL-L1-iBd"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Neighbors" image="neighbors.png" id="UMX-Vj-rBi"/>
+                    <connections>
+                        <outlet property="hobbiesCollectionView" destination="WVN-rl-fE4" id="3xh-TD-eps"/>
+                        <outlet property="mapView" destination="Sk1-Ta-qil" id="Jnd-IY-qB9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fs-tT-Iw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="672" y="726"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="jay-sq-L02">
+            <objects>
+                <viewController id="9kS-PM-lis" customClass="MeViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdR-Be-TXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="qLU-Kq-Njm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vpV-eB-rdH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqP-K9-DT4">
+                                <rect key="frame" x="246" y="138" width="116" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="TXA-Q0-mXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myj-gq-6Gh">
+                                <rect key="frame" x="125" y="323" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6sE-Le-vMD">
+                                <rect key="frame" x="125" y="167" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="FzB-W2-cQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-HQ-e1Z">
+                                <rect key="frame" x="254" y="415" width="92" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Rpr-RV-SrA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYM-ux-eMU">
+                                <rect key="frame" x="20" y="405" width="560" height="2"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Cgb-4F-HDm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-hn-hYl">
+                                <rect key="frame" x="238" y="289" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbs-Wo-fwR">
+                                <rect key="frame" x="285" y="513" width="30" height="30"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <segue destination="Tds-02-cHP" kind="show" id="4js-iZ-Dcr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9j1-E0-IfH">
+                                <rect key="frame" x="125" y="352" width="351" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="utu-DN-ZrQ">
+                                <rect key="frame" x="20" y="442" width="560" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Gok-uH-S9a"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GBW-de-3xl">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="lvy-Fr-2TM" customClass="HobbyCollectionViewCell" customModule="hoBshare" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KE6-xq-OzA">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="KE6-xq-OzA" firstAttribute="leading" secondItem="lvy-Fr-2TM" secondAttribute="leadingMargin" id="6xC-nm-Y6q"/>
+                                            <constraint firstItem="KE6-xq-OzA" firstAttribute="bottom" secondItem="lvy-Fr-2TM" secondAttribute="bottomMargin" id="Ox3-y6-RVW"/>
+                                            <constraint firstItem="KE6-xq-OzA" firstAttribute="trailing" secondItem="lvy-Fr-2TM" secondAttribute="trailingMargin" id="a2X-Eg-850"/>
+                                            <constraint firstItem="KE6-xq-OzA" firstAttribute="top" secondItem="lvy-Fr-2TM" secondAttribute="topMargin" id="lcH-WS-LF3"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="KE6-xq-OzA" id="o2N-Vt-Wwd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9kS-PM-lis" id="IsH-iD-p4L"/>
+                                    <outlet property="delegate" destination="9kS-PM-lis" id="79k-EH-wcQ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aqA-hn-hYl" firstAttribute="centerX" secondItem="Myj-gq-6Gh" secondAttribute="centerX" id="1yn-8b-neT"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="leading" secondItem="vpV-eB-rdH" secondAttribute="leadingMargin" id="3jP-iQ-nJh"/>
+                            <constraint firstItem="utu-DN-ZrQ" firstAttribute="top" secondItem="ILW-HQ-e1Z" secondAttribute="bottom" constant="8" symbolic="YES" id="5bs-wL-WsI"/>
+                            <constraint firstItem="aqA-hn-hYl" firstAttribute="centerY" secondItem="vpV-eB-rdH" secondAttribute="centerY" id="9zx-yj-FhF"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="top" secondItem="9j1-E0-IfH" secondAttribute="bottom" constant="32" id="CYD-BY-Pip"/>
+                            <constraint firstItem="9j1-E0-IfH" firstAttribute="centerX" secondItem="DYM-ux-eMU" secondAttribute="centerX" id="D0B-iE-MSm"/>
+                            <constraint firstItem="FqP-K9-DT4" firstAttribute="trailing" secondItem="aqA-hn-hYl" secondAttribute="trailing" id="F0X-8J-Ync"/>
+                            <constraint firstItem="Myj-gq-6Gh" firstAttribute="trailing" secondItem="9j1-E0-IfH" secondAttribute="trailing" id="GFW-kC-g4k"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="trailing" secondItem="utu-DN-ZrQ" secondAttribute="trailing" id="KEM-Cs-gNu"/>
+                            <constraint firstItem="6sE-Le-vMD" firstAttribute="top" secondItem="FqP-K9-DT4" secondAttribute="bottom" constant="8" symbolic="YES" id="Kp8-dv-sQh"/>
+                            <constraint firstItem="ILW-HQ-e1Z" firstAttribute="top" secondItem="DYM-ux-eMU" secondAttribute="bottom" constant="8" symbolic="YES" id="POH-ys-BzQ"/>
+                            <constraint firstItem="FqP-K9-DT4" firstAttribute="top" secondItem="BdR-Be-TXj" secondAttribute="bottom" constant="44" id="TNU-WP-YhB"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="leading" secondItem="utu-DN-ZrQ" secondAttribute="leading" id="Zxe-8b-fgc"/>
+                            <constraint firstItem="9j1-E0-IfH" firstAttribute="top" secondItem="Myj-gq-6Gh" secondAttribute="bottom" constant="8" symbolic="YES" id="cAp-nt-Zg7"/>
+                            <constraint firstItem="qLU-Kq-Njm" firstAttribute="top" secondItem="utu-DN-ZrQ" secondAttribute="bottom" constant="46" id="chw-nS-QOj"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="trailing" secondItem="vpV-eB-rdH" secondAttribute="trailingMargin" id="eex-Gd-7MY"/>
+                            <constraint firstItem="Myj-gq-6Gh" firstAttribute="top" secondItem="aqA-hn-hYl" secondAttribute="bottom" constant="13" id="fzC-md-3f3"/>
+                            <constraint firstItem="Gbs-Wo-fwR" firstAttribute="top" secondItem="utu-DN-ZrQ" secondAttribute="bottom" constant="8" symbolic="YES" id="hF0-XL-3MB"/>
+                            <constraint firstItem="DYM-ux-eMU" firstAttribute="centerX" secondItem="ILW-HQ-e1Z" secondAttribute="centerX" id="iB6-UL-cEE"/>
+                            <constraint firstItem="Myj-gq-6Gh" firstAttribute="leading" secondItem="9j1-E0-IfH" secondAttribute="leading" id="jda-mQ-grq"/>
+                            <constraint firstItem="6sE-Le-vMD" firstAttribute="leading" secondItem="Myj-gq-6Gh" secondAttribute="leading" id="rKS-ps-xoZ"/>
+                            <constraint firstItem="6sE-Le-vMD" firstAttribute="trailing" secondItem="Myj-gq-6Gh" secondAttribute="trailing" id="u6t-fP-4Yc"/>
+                            <constraint firstItem="Gbs-Wo-fwR" firstAttribute="centerX" secondItem="utu-DN-ZrQ" secondAttribute="centerX" id="vFi-iF-PaH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Me" prompt="New username: Sign-Up / Existing username: Sign-In" id="khD-tc-Ucg">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="GO6-Aj-1bq">
+                            <connections>
+                                <action selector="submitButtonPressed:" destination="9kS-PM-lis" id="dny-K3-02j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="curLatLabel" destination="Myj-gq-6Gh" id="RbQ-rv-0Hd"/>
+                        <outlet property="curLonLabel" destination="9j1-E0-IfH" id="c25-ao-074"/>
+                        <outlet property="hobbiesCollectionView" destination="utu-DN-ZrQ" id="2y5-u3-VsJ"/>
+                        <outlet property="username" destination="6sE-Le-vMD" id="D2l-Yn-kxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyT-EQ-xhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1484" y="47"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jw2-Xm-Kb9">
+            <objects>
+                <tabBarController id="GBJ-aU-2hN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="B5v-vP-4tO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9iX-L4-uWO" kind="relationship" relationship="viewControllers" id="Sbw-V1-2OY"/>
+                        <segue destination="xNk-jW-bK1" kind="relationship" relationship="viewControllers" id="ie8-Gu-fgj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gef-d9-SD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="375"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="FAo-ML-4ze">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9iX-L4-uWO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="me.png" id="8Ew-OT-01g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MjN-Cv-8UK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9kS-PM-lis" kind="relationship" relationship="rootViewController" id="u2c-Vj-gJa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDR-45-O3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="47"/>
+        </scene>
+        <!--Choose up to 3 Hobbies-->
+        <scene sceneID="zMr-8e-yGL">
+            <objects>
+                <viewController id="Tds-02-cHP" customClass="EditHobbiesViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahk-Xc-fYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="mNU-w3-frP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XzH-Fb-M5I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-lE-M9T">
+                                <rect key="frame" x="20" y="0.0" width="560" height="388"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="cMv-BC-1Mt"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gw7-qb-iNv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="dEi-oS-rAC" customClass="HobbyCollectionViewCell" customModule="hoBshare" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-ec-1o0">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="R1q-ec-1o0" firstAttribute="trailing" secondItem="dEi-oS-rAC" secondAttribute="trailingMargin" id="2fP-Zn-uPe"/>
+                                            <constraint firstItem="R1q-ec-1o0" firstAttribute="bottom" secondItem="dEi-oS-rAC" secondAttribute="bottomMargin" id="Ja9-pu-rQ8"/>
+                                            <constraint firstItem="R1q-ec-1o0" firstAttribute="top" secondItem="dEi-oS-rAC" secondAttribute="topMargin" id="ePp-2Z-mMp"/>
+                                            <constraint firstItem="R1q-ec-1o0" firstAttribute="leading" secondItem="dEi-oS-rAC" secondAttribute="leadingMargin" id="fcc-AN-v7p"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="R1q-ec-1o0" id="hGO-U0-x1Z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCategoryHeader" id="BD4-Jk-jMv" customClass="HobbiesCollectionViewHeader" customModule="hoBshare" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="94" width="560" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TECHNOLOGY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAg-HL-MLR">
+                                            <rect key="frame" x="170" y="14" width="220" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="220" id="8wU-j1-m1Z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VAg-HL-MLR" firstAttribute="centerX" secondItem="BD4-Jk-jMv" secondAttribute="centerX" id="lQF-dz-Izh"/>
+                                        <constraint firstItem="VAg-HL-MLR" firstAttribute="centerY" secondItem="BD4-Jk-jMv" secondAttribute="centerY" id="oSd-8V-V4S"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="categoryLabel" destination="VAg-HL-MLR" id="xck-Ba-cBR"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cMv-BC-1Mt"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tds-02-cHP" id="aF1-xT-WPE"/>
+                                    <outlet property="delegate" destination="Tds-02-cHP" id="TRr-r1-cEH"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAn-gC-bgy">
+                                <rect key="frame" x="20" y="396" width="560" height="2"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="jV7-4g-mwm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-gN-ZQa">
+                                <rect key="frame" x="254" y="406" width="92" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="DbO-8q-1sn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F8l-eu-rQq">
+                                <rect key="frame" x="20" y="462" width="560" height="81"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="p7d-1P-cfx"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3eS-0w-bb9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="y56-jJ-CSN" customClass="HobbyCollectionViewCell" customModule="hoBshare" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Mk-by-wZh">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="2Mk-by-wZh" firstAttribute="trailing" secondItem="y56-jJ-CSN" secondAttribute="trailingMargin" id="5wd-4a-9bS"/>
+                                            <constraint firstItem="2Mk-by-wZh" firstAttribute="bottom" secondItem="y56-jJ-CSN" secondAttribute="bottomMargin" id="6UX-Ns-rdQ"/>
+                                            <constraint firstItem="2Mk-by-wZh" firstAttribute="leading" secondItem="y56-jJ-CSN" secondAttribute="leadingMargin" id="NFW-lw-ENf"/>
+                                            <constraint firstItem="2Mk-by-wZh" firstAttribute="top" secondItem="y56-jJ-CSN" secondAttribute="topMargin" id="wIH-nb-phU"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="2Mk-by-wZh" id="XWw-k0-pCA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tds-02-cHP" id="4SH-Qh-BYe"/>
+                                    <outlet property="delegate" destination="Tds-02-cHP" id="W9H-zi-Jrg"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap a hobby to delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HU-ae-UiK">
+                                <rect key="frame" x="217" y="433" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7HU-ae-UiK" firstAttribute="top" secondItem="d2Q-gN-ZQa" secondAttribute="bottom" constant="8" symbolic="YES" id="9Ys-UY-eF6"/>
+                            <constraint firstItem="mNU-w3-frP" firstAttribute="top" secondItem="F8l-eu-rQq" secondAttribute="bottom" constant="8" symbolic="YES" id="B5d-V7-sx5"/>
+                            <constraint firstItem="F8l-eu-rQq" firstAttribute="top" secondItem="7HU-ae-UiK" secondAttribute="bottom" constant="8" symbolic="YES" id="D5v-S5-TpB"/>
+                            <constraint firstItem="LAn-gC-bgy" firstAttribute="trailing" secondItem="F8l-eu-rQq" secondAttribute="trailing" id="FQ6-3a-QJ2"/>
+                            <constraint firstItem="eq8-lE-M9T" firstAttribute="leading" secondItem="LAn-gC-bgy" secondAttribute="leading" id="IxZ-Gg-sqb"/>
+                            <constraint firstItem="LAn-gC-bgy" firstAttribute="top" secondItem="eq8-lE-M9T" secondAttribute="bottom" constant="8" id="PKG-PD-hpB"/>
+                            <constraint firstItem="LAn-gC-bgy" firstAttribute="centerX" secondItem="d2Q-gN-ZQa" secondAttribute="centerX" id="Ukl-7D-6Js"/>
+                            <constraint firstItem="d2Q-gN-ZQa" firstAttribute="centerX" secondItem="7HU-ae-UiK" secondAttribute="centerX" id="Vih-8T-fSo"/>
+                            <constraint firstItem="eq8-lE-M9T" firstAttribute="trailing" secondItem="XzH-Fb-M5I" secondAttribute="trailingMargin" id="bs8-Un-Wr7"/>
+                            <constraint firstItem="d2Q-gN-ZQa" firstAttribute="top" secondItem="LAn-gC-bgy" secondAttribute="bottom" constant="8" symbolic="YES" id="byN-0a-cH9"/>
+                            <constraint firstItem="eq8-lE-M9T" firstAttribute="top" secondItem="ahk-Xc-fYR" secondAttribute="bottom" constant="-94" id="pRD-Bu-bnm"/>
+                            <constraint firstItem="eq8-lE-M9T" firstAttribute="trailing" secondItem="LAn-gC-bgy" secondAttribute="trailing" id="qr5-WH-JSQ"/>
+                            <constraint firstItem="LAn-gC-bgy" firstAttribute="leading" secondItem="F8l-eu-rQq" secondAttribute="leading" id="sVQ-jB-hI5"/>
+                            <constraint firstItem="eq8-lE-M9T" firstAttribute="leading" secondItem="XzH-Fb-M5I" secondAttribute="leadingMargin" id="vz3-t7-vSB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose up to 3 Hobbies" prompt="Scroll up and down. Tap to add." id="ZNx-AW-g7B"/>
+                    <connections>
+                        <outlet property="availableHobbiesCollectionView" destination="eq8-lE-M9T" id="6At-Gg-kz7"/>
+                        <outlet property="hobbiesCollectionView" destination="F8l-eu-rQq" id="J0Q-lZ-ZDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3j-Lh-7v9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="47"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="me.png" width="32" height="32"/>
+        <image name="neighbors.png" width="32" height="32"/>
+    </resources>
 </document>

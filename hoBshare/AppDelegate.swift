@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("MyHobbies") == nil
+        {
+            let myHobbies = [Hobby(hobbyName: "Video Games"), Hobby(hobbyName: "Apple"), Hobby(hobbyName: "Computers")]
+            let hobbyData = NSKeyedArchiver.archivedDataWithRootObject(myHobbies)
+            
+            NSUserDefaults.standardUserDefaults().registerDefaults(["MyHobbies" : hobbyData])
+            NSUserDefaults.standardUserDefaults().synchronize() 
+
+        }
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("CurrentUserId") == nil
+        {
+            NSUserDefaults.standardUserDefaults().registerDefaults(["CurrentUserId" : ""])
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+        
         return true
     }
 
